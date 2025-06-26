@@ -99,19 +99,27 @@
         <!-- About Me Section -->
         <section id="about" class="py-16">
             <h2 id="about-title" class="text-4xl font-bold text-gray-800 mb-8 text-center pt-16">About Me</h2>
-            <div class="max-w-5xl mx-auto bg-white p-8 rounded-xl shadow-lg text-lg leading-relaxed">
-                <p class="mb-4">
-                    I am a highly driven Ph.D. Candidate in Civil Engineering at the University of Virginia, set to graduate on August 8, 2025. My academic and research journey is dedicated to pushing the boundaries of Artificial Intelligence and Machine Learning to tackle complex challenges in scientific and engineering domains. I hold both a B.Sc. and M.Sc. in Civil Engineering from Sharif University of Technology, consistently achieving top academic honors (GPA 4.00/4.00 for M.Sc. and 3.73/4.00 for B.Sc.).
-                </p>
-                <p class="mb-4">
-                    My doctoral research, encapsulated in the dissertation titled "Advances in Graph-Based Learning for Flood Forecasting: Data-Efficient Learning, Physically Consistent Modeling, and Domain-Adaptive Generalization," focuses on developing cutting-edge AI frameworks for real-world phenomena. This includes pioneering work in Multi-Fidelity Graph Neural Networks (MFGNNs) for data-efficient modeling, interpretable Physics-informed GNNs (HydroGraphNet) that enforce physical consistency and enhance transparency through Kolmogorov-Arnold Networks (KANs), and Domain-Adaptive Geometry-Informed Neural Operators (GINO) for robust generalization across diverse environments.
-                </p>
-                <p class="mb-4">
-                    I thrive in interdisciplinary research settings, as evidenced by my collaborations with NVIDIA and my specialized coursework in Deep Learning, Machine Learning, Data Mining, and Uncertainty Quantification. My expertise lies in designing novel neural network architectures that significantly enhance the speed, accuracy, interpretability, and generalizability of solutions for partial differential equations (PDEs) and intricate physical systems. I am proficient in handling high-dimensional data, optimizing computational efficiency, and ensuring the physical plausibility of AI models.
-                </p>
-                <p>
-                    I am enthusiastically seeking AI/ML Research Scientist positions in leading technology companies, where I can apply my advanced theoretical knowledge and practical implementation skills to contribute to groundbreaking innovations and advance the state-of-the-art in machine learning for scientific and engineering applications.
-                </p>
+            <div class="max-w-5xl mx-auto bg-white p-8 rounded-xl shadow-lg text-lg leading-relaxed flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
+                <!-- Photo Container -->
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/200x200/A0B2C3/FFFFFF?text=Your+Photo" alt="Mehdi Taghizadeh" class="rounded-full w-48 h-48 object-cover shadow-lg border-4 border-indigo-200">
+                    <p class="text-sm text-center text-gray-500 mt-2">Mehdi Taghizadeh</p>
+                </div>
+                <!-- About Me Text -->
+                <div>
+                    <p class="mb-4">
+                        I am a highly driven Ph.D. Candidate in Civil Engineering at the University of Virginia, set to graduate on August 8, 2025. My academic and research journey is dedicated to pushing the boundaries of Artificial Intelligence and Machine Learning to tackle complex challenges in scientific and engineering domains. I hold both a B.Sc. and M.Sc. in Civil Engineering from Sharif University of Technology, consistently achieving top academic honors (GPA 4.00/4.00 for M.Sc. and 3.73/4.00 for B.Sc.).
+                    </p>
+                    <p class="mb-4">
+                        My doctoral research, encapsulated in the dissertation titled "Advances in Graph-Based Learning for Flood Forecasting: Data-Efficient Learning, Physically Consistent Modeling, and Domain-Adaptive Generalization," focuses on developing cutting-edge AI frameworks for real-world phenomena. This includes pioneering work in Multi-Fidelity Graph Neural Networks (MFGNNs) for data-efficient modeling, interpretable Physics-informed GNNs (HydroGraphNet) that enforce physical consistency and enhance transparency through Kolmogorov-Arnold Networks (KANs), and Domain-Adaptive Geometry-Informed Neural Operators (GINO) for robust generalization across diverse environments.
+                    </p>
+                    <p class="mb-4">
+                        I thrive in interdisciplinary research settings, as evidenced by my collaborations with NVIDIA and my specialized coursework in Deep Learning, Machine Learning, Data Mining, and Uncertainty Quantification. My expertise lies in designing novel neural network architectures that significantly enhance the speed, accuracy, interpretability, and generalizability of solutions for partial differential equations (PDEs) and intricate physical systems. I am proficient in handling high-dimensional data, optimizing computational efficiency, and ensuring the physical plausibility of AI models.
+                    </p>
+                    <p>
+                        I am enthusiastically seeking AI/ML Research Scientist positions in leading technology companies, where I can apply my advanced theoretical knowledge and practical implementation skills to contribute to groundbreaking innovations and advance the state-of-the-art in machine learning for scientific and engineering applications.
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -454,7 +462,6 @@
                     if (!sidebarNav.classList.contains('-translate-x-full')) {
                         sidebarNav.classList.add('-translate-x-full');
                         mobileMenuBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>';
-                        mobileMenuBtn.setAttribute('aria-label', 'Open menu');
                     }
                 });
             });
