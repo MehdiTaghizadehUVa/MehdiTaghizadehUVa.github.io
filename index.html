@@ -3,14 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Mehdi Taghizadeh – AI/ML Research Scientist</title>
-    <meta name="description" content="Personal website of Mehdi Taghizadeh, Ph.D. – AI/ML Research Scientist specializing in graph neural networks, neural operators, and physics-informed machine learning for complex physical and infrastructure systems.">
+    <meta name="description" content="Personal website of Mehdi Taghizadeh, Ph.D. – AI/ML Research Scientist specializing in graph neural networks, neural operators, generative AI, and physics-informed machine learning for complex physical and infrastructure systems.">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://mehditaghizadehuva.github.io/">
-
-    <!-- Google Search Console verification (replace with the meta tag they give you) -->
-    <!-- <meta name="google-site-verification" content="PASTE_YOUR_TOKEN_HERE"> -->
-
     <style>
         :root {
             --bg: #f9fafb;
@@ -244,6 +240,27 @@
             text-decoration: none;
         }
 
+        .hero-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .hero-photo-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 999px;
+            object-fit: cover;
+            border: 3px solid #ffffff;
+            box-shadow: var(--shadow-soft);
+        }
+
         /* Cards and lists */
 
         .card-grid {
@@ -379,6 +396,19 @@
             color: var(--text-muted);
         }
 
+        /* Certifications */
+
+        .cert-list {
+            list-style: disc;
+            padding-left: 1.1rem;
+            margin: 0;
+            font-size: 0.93rem;
+        }
+
+        .cert-list li + li {
+            margin-top: 0.25rem;
+        }
+
         /* Contact */
 
         .contact-grid {
@@ -453,7 +483,7 @@
         <div class="header-inner">
             <div class="branding">
                 <h1>Mehdi Taghizadeh</h1>
-                <p>AI/ML Research Scientist · Graph Neural Networks & Physics-based ML</p>
+                <p>AI/ML Research Scientist · Graph Neural Networks &amp; Physics-based ML</p>
             </div>
             <nav class="site-nav" aria-label="Main navigation">
                 <a href="#about">About</a>
@@ -461,6 +491,7 @@
                 <a href="#publications">Publications</a>
                 <a href="#experience">Experience</a>
                 <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#awards">Awards</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -499,6 +530,9 @@
             </div>
 
             <div class="hero-side">
+                <div class="hero-photo-wrapper">
+                    <img src="images/mehdi_photo.jpg" alt="Portrait of Mehdi Taghizadeh" class="hero-photo">
+                </div>
                 <div class="card">
                     <h3>At a glance</h3>
                     <ul class="inline-list">
@@ -775,6 +809,28 @@
                         geospatial analysis for safety and infrastructure planning.
                     </p>
                 </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="section" aria-labelledby="certifications-title">
+            <div class="section-header">
+                <h2 id="certifications-title">Certifications &amp; Specialized Training</h2>
+                <p>Selected industry and online credentials aligned with modern deep learning and generative AI.</p>
+            </div>
+            <div class="card">
+                <ul class="cert-list">
+                    <li><strong>5-Day Gen AI Intensive</strong> — Google (2024)</li>
+                    <li><strong>Generative AI with Large Language Models</strong> — Coursera / DeepLearning.AI (2023)</li>
+                    <li><strong>Building Transformer-Based Natural Language Processing Applications</strong> — NVIDIA (2023)</li>
+                    <li><strong>Deep Learning Specialization</strong> — Coursera / DeepLearning.AI (courses including Neural Networks and Deep Learning; Improving Deep Neural Networks; Structuring ML Projects; CNNs; Sequence Models, 2022–2023)</li>
+                    <li><strong>Build Better Generative Adversarial Networks (GANs)</strong> — Coursera (2022)</li>
+                    <li><strong>Fundamentals of Reinforcement Learning</strong> — Coursera (2022)</li>
+                    <li><strong>Machine Learning</strong> — Coursera (Andrew Ng, 2021)</li>
+                </ul>
+                <p style="margin-top:0.7rem; font-size:0.85rem; color:var(--text-muted);">
+                    A more complete list of course-based training and certificates is available on my LinkedIn profile.
+                </p>
             </div>
         </section>
 
